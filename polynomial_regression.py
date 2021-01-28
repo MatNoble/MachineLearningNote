@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 class regression:
     def __init__(self, y, X, w=np.zeros((3, 1)), n=1, lr=0.2, lam=0, MAX_Iter=500, stop_condition=1e-4):
         # axis
-        self.x, self.y = X[:,-2], y
+        self.x, self.y = X.copy(), y
         # matrix
         self.X, self.mu, self.std = self.normalize(X)
+        # self.X = X
         # polynomial of degree n
         self.n = n
         # weights
@@ -33,6 +34,7 @@ class regression:
         t, w = 1, self.w
         y_hat = self.X @ w
         plt.ion()
+        Loss = []
         while True:
             # updata w
             wn = w
@@ -41,19 +43,18 @@ class regression:
             # compute loss
             y_hat = self.X @ w
             loss = self.MSELoss(y_hat, w)
+            Loss.append(loss[0][0])
             
             # Visualization
-            if t % 5 == 0: self.visual(y_hat, loss)
-           
+            if t % 5 == 0: self.visual(self.x[:, -2], y_hat, loss)
+            
             # end condition
-            if LA.norm(w-wn) < self.stop_condition or t > self.MAX_Iter:
+            if LA.norm(w-wn) < self.stop_condition or t == self.MAX_Iter:
                 print('\n iteration number: ', t)
                 break
             t += 1
-        # out put
-        print('w = \n', w)
-        print('++++++++++++++++++++++++++++')
         plt.ioff()
+        # self.plot_cost(Loss, range(1, t+1))
         return w, self.mu, self.std
 
     def MSELoss(self, y_hat, w):
@@ -70,16 +71,24 @@ class regression:
         m = 1.0/self.y.shape[0]
         return m*(self.X.T @ (y_hat-self.y) + self.lam * w)
     
-    def visual(self, y_hat, loss):
+    def visual(self, x, y_hat, loss):
         # plot and show learning process
         plt.cla()
-        plt.scatter(self.x, self.y)
-        plt.plot(self.x, y_hat, 'r-', lw=4)
-        plt.text(-1.5, 17.5, 'Loss=%.5f' %loss, fontdict={'size': 18, 'color': 'red'})
+        plt.scatter(x, self.y)
+        plt.plot(x, y_hat, 'r-', lw=4)
+        plt.text(-2.0, 18, 'Loss=%.5f' %loss, fontdict={'size': 18, 'color': 'red'})
         plt.xticks(fontsize=14)
         plt.yticks(fontsize=14)
         plt.grid(True)
         plt.pause(0.1)
+
+    def plot_cost(self, J_all, num_epochs):
+        # plt.figure(figsize=(10, 8))
+        plt.xlabel('Epochs', fontsize=14)
+        plt.ylabel('Cost', fontsize=14)
+        plt.plot(num_epochs, J_all, 'm', linewidth = "5")
+        plt.xticks(fontsize=14)
+        plt.yticks(fontsize=14)
 
 if __name__ == "__main__":
     # =====================================
