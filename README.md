@@ -20,6 +20,6 @@
 
 ## 逻辑回归
 
-<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/logisticRegression.gif"/>
+<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/logisticRegression.gif" width=400 />
 
-<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210130232117.png"/>
+<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210130232117.png" width=400 />
