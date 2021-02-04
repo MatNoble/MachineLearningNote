@@ -8,9 +8,9 @@
   - [ ] 支持向量机
   - [ ] 朴素贝叶斯
   - [ ] 决策树
-
 - [工具](#工具)
   - [NumPy](#NumPy)
+  - [Git](#Git)
 
 # 机器学习
 
@@ -39,4 +39,10 @@
 
 # 工具
 
+## NumPy
+
 [NumPy](https://nbviewer.jupyter.org/github/MatNoble/MachineLearningNote/blob/main/NumPyNotes/NumpyLN.ipynb)
+
+## Git
+
+[Git](https://matnoble.me/tech/programming/git/)
