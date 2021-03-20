@@ -38,7 +38,7 @@
 
 ## 支持向量机
 
-[SVM 知识](https://nbviewer.jupyter.org/github/MatNoble/MachineLearningNote/blob/main/svm/svm_basic.ipynb)
+[SVM 知识](https://github.com/MatNoble/MachineLearningNote/blob/main/svm/svm_basic.ipynb)
 
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210320125324.png"/>
 
