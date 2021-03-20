@@ -1,16 +1,15 @@
 # Machine Learning Note
 
-- [机器学习](#机器学)
+- [Machine Learning Note](#machine-learning-note)
+- [机器学习](#机器学习)
   - [线性回归](#线性回归)
     - [多项式回归](#多项式回归)
   - [逻辑回归](#逻辑回归)
-  - [k 均值聚类](#k-均值聚类) 
-  - 支持向量机
-  - 朴素贝叶斯
-  - 决策树
+  - [支持向量机](#支持向量机)
+  - [k 均值聚类](#k-均值聚类)
 - [工具](#工具)
-  - [NumPy](#NumPy)
-  - [Git](#Git)
+  - [NumPy](#numpy)
+  - [Git](#git)
 
 # 机器学习
 
@@ -34,6 +33,16 @@
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/logisticRegression.gif" width=400 />
 
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210130232117.png" width=400 />
+
+<hr />
+
+## 支持向量机
+
+[SVM 知识](https://github.com/MatNoble/1Day/blob/main/interview/ml/mlq.md#%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA-svm)
+
+<img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210320125324.png"/>
+
+[colab 代码](https://colab.research.google.com/drive/1vEjBg5WRxwWjSZOEjFrJarimdbMIdMhr?usp=sharing)
 
 <hr />
 
