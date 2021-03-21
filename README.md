@@ -15,6 +15,8 @@
 
 ##  线性回归
 
+[什么是线性回归](./LinearRegression/linearRegression.ipynb)
+
 <img src="./images/visual.svg" width=400 />
 
 <img src="./images/cost.svg" width=400 />
