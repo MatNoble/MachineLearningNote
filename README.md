@@ -32,6 +32,8 @@
 
 ## 逻辑回归
 
+[什么是逻辑回归](./LogisticRegression/logisticRegression.ipynb)
+
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/logisticRegression.gif" width=400 />
 
 <img src="https://cdn.jsdelivr.net/gh/MatNoble/Images/20210130232117.png" width=400 />
